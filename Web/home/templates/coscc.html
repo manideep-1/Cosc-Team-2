@@ -1,0 +1,54 @@
+<html>
+<head>
+<title> Login Page </title>
+<!-- CSS  -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<!-- JS, Popper.js, and jQuery -->
+
+<style>
+	body{
+	background: url(http://fetr.ac.in/wp-content/uploads/2017/06/Auditorium2.jpg) ;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+	p{
+		background-color: tomato;
+	}
+	h1{
+		background-color:rgb(88, 112, 128);
+	}
+</style>
+</head>
+<body>
+<div class="container pt-5">
+	<div class="row mt-5 pt-5">
+	<div class="col-5" style="border-radius: 10px;">
+	</div>
+	<div class="col-6 my-4 p-4">
+	<center><h1 class="text-white mb-4">Admin Login!</h1></center>
+	<form method="POST" action="{%url 'login'%}">
+		{% csrf_token %}
+		<div class="form-group">
+		<!-- <label for="id" style="color:white">Id</label> -->
+		<!--input type="text" name="" placeholder="Id" required class="form-control my-2">
+		<! <label for="name"  style="color:white">Username</label> -->
+		<input type="text" name="username" placeholder="Username" required class="form-control my-2">
+		<!-- <label for="password" style="color:white">Password</label> -->
+		<input type="password" name="password" placeholder="Password" required class="form-control my-2">
+		</div> 
+		<center><input class="btn col-6 text-black font-weight-bold" type="submit" value="Login" style="background-color:  #b3462b; font-size: 18px;"></center>
+		<!-- </a> -->
+	</form>
+	</div>
+	</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>

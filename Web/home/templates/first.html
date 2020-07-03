@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: 'Lato', sans-serif;
+  background-image: url("https://www.americanadoptions.com/blog/wp-content/uploads/2018/04/GettyImages-834157812.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+button {
+  background-color: #276e74;
+  border: none;
+  color: white;
+  padding: 30px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(90, 42, 82);
+  background-color: rgba(55, 42, 63, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+</style>
+</head>
+<body>
+
+<div id="myNav" class="overlay" align='center'>
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="{%url 'show'%}">Show Seminar Hall requests</a>
+ 	  <a href="{%url 'showsem'%}">Seminar Hall List</a>
+  	<a href="{%url 'showlab'%}">Labs List</a>
+    <a href="{%url 'form'%}"> Add Lab</a>
+    <a href="{%url 'asktt'%}">Time Table</a>
+    <a href="{%url 'logout'%}">Logout</a>
+  </div>
+</div>
+<div align='center'>
+<button>Lab availability And Seminar hall availability</button></br>
+<button>Welcome Admin!</button><br/></br></br></br></br>
+
+
+<span style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776;Services</span>
+</div>
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "50%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+     
+</body>
+</html>

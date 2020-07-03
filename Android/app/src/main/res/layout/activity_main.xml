@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/et2"
+        android:layout_width="110dp"
+        android:layout_height="34dp"
+        android:background="@drawable/edittextstyle"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.684"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.292" />
+
+    <EditText
+        android:id="@+id/et3"
+        android:layout_width="110dp"
+        android:layout_height="34dp"
+        android:gravity="center"
+        android:background="@drawable/edittextstyle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.684"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.38" />
+
+    <EditText
+        android:id="@+id/et4"
+        android:layout_width="165dp"
+        android:layout_height="34dp"
+        android:gravity="center"
+        android:background="@drawable/edittextstyle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.837"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.463" />
+
+    <Button
+        android:id="@+id/buttonn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Book Lab"
+        android:background="@drawable/cutom_layout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.818" />
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/bnv"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:foregroundGravity="center"
+        android:background="#4682b4"
+        app:itemTextColor="@drawable/navcolor"
+        app:itemIconTint="@drawable/navcolor"
+        app:menu="@menu/nav_menu" />
+    <TextView
+        android:id="@+id/labtv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="USER ID:"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/bnv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.322"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.287" />
+
+    <TextView
+        android:id="@+id/labtvhead"
+        android:layout_width="233dp"
+        android:layout_height="38dp"
+        android:gravity="center"
+        android:text="Enter the required details..."
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/bnv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.095" />
+
+    <TextView
+        android:id="@+id/labtv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PURPOSE:"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/bnv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.326"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.453" />
+
+    <TextView
+        android:id="@+id/labtv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="ROOM ID:"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/bnv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.336"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.372" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="prev_page">PREV PAGE</string>
+    <string name="go_back">GO BACK</string>
+</resources>

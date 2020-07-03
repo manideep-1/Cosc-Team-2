@@ -1,0 +1,42 @@
+<html>
+    <body>{% if data %}  
+        <table class="table table-hover">
+           <thead>
+             <tr>
+               <th scope="col">#</th>
+               {% for key in data.0.keys %}
+               <th scope="col">{{ key }}</th>
+               {% endfor %}
+             </tr>
+           </thead>
+           <tbody>
+           {% for dict_item in data %}
+           <form  class="form-container" action="{%url 'labdis' %}" method="POST">
+             {% csrf_token %} 
+             <tr>
+              <th scope="row">{{forloop.counter}}</th>
+              {% for value in dict_item.values %}
+              <td>
+                    <div align='center'>
+                        <input type='text' name='lab_no' >
+                        <input type='text' name='building_no' >
+                        <input type='text' name='capacity' >
+                        <input type='text' name='availability' >
+        
+                    </div>
+        
+              
+              <td> {{ value }} </td>
+             
+        
+               {% endfor %}
+             </tr>
+           </form> 
+             {% endfor %}
+           </tbody>
+         </table>
+       
+     {% endif %}
+     
+    </body>
+</html>

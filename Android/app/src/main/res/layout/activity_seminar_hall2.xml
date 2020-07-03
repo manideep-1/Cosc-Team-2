@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".seminar_hall2">
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:id="@+id/bnv"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:foregroundGravity="center"
+        android:background="#4682b4"
+        app:itemTextColor="@drawable/navcolor"
+        app:itemIconTint="@drawable/navcolor"
+        app:menu="@menu/nav_menu" />
+
+    <TextView
+        android:id="@+id/Heading2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center_horizontal"
+        android:text="SEMINAR HALLS"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="18dp"
+
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.038" />
+
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="410dp"
+        android:layout_height="50dp"
+        android:background="@drawable/edittextstyle"
+        android:spinnerMode="dropdown"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Heading2"
+
+        app:layout_constraintVertical_bias="0.292"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/useridsem"
+        android:layout_width="175dp"
+        android:layout_height="44dp"
+        android:background="@drawable/edittextstyle"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter User Id"
+
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.565"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.139" />
+
+    <EditText
+        android:id="@+id/roomidsem"
+        android:layout_width="175dp"
+        android:layout_height="44dp"
+        android:background="@drawable/edittextstyle"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Room Id"
+
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.237" />
+
+    <EditText
+        android:id="@+id/Semname"
+
+        android:layout_width="211dp"
+        android:layout_height="51dp"
+        android:background="@drawable/edittextstyle"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="seminar hall name"
+
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.615"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/purpose"
+        android:layout_width="211dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="248dp"
+        android:background="@drawable/edittextstyle"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Purpose"
+
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.615"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/cutom_layout"
+        android:clickable="true"
+        android:enabled="false"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="Send request"
+        android:textColor="@color/cardview_light_background"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/purpose"
+        app:layout_constraintVertical_bias="0.182" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
